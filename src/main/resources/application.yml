@@ -1,0 +1,24 @@
+spring:
+  flyway:
+    locations: classpath:migrations
+    url: jdbc:postgresql://localhost:5432/spring_db
+    user: hits
+    password: hits
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_db
+    username: hits
+    password: hits
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8191
+
+csv:
+  users: D:/csv/users.csv
+  projects: D:/csv/projects.csv
+  tasks: D:/csv/tasks.csv
+  comments: D:/csv/comments.csv
+
